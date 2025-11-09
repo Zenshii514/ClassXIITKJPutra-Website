@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>XII TKJ PUTRA</title>
+
+  <!-- Google Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <main>
+
+    <!-- SPLASH INTRO -->
+    <div id="splash" aria-hidden="false">
+      <div class="logo">
+        <img src="img/logos.jpg" alt="Logo Kelas XII" style="width:100%;height:100%;object-fit:contain;">
+      </div>
+      <h1>XII TKJ PUTRA</h1>
+      <small>Journey of Adulthood</small>
+      <button class="skip" id="skipSplash">Ikuzoo!</button>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav>
+      <div class="nav-left">
+        <img src="img/logon.jpg" alt="logo kecil" class="logo-small" />
+        <div class="brand">XII TKJ PUTRA</div>
+      </div>
+
+      <ul class="nav-links" role="menubar">
+        <li role="none"><a role="menuitem" href="#home">Beranda</a></li>
+        <li role="none"><a role="menuitem" href="#students">Siswa</a></li>
+        <li role="none"><a role="menuitem" href="#quotes">Quotes</a></li>
+        <li role="none"><a role="menuitem" href="#gallery">Galeri</a></li>
+        <li role="none"><a role="menuitem" href="#events">Event</a></li>
+        <li role="none"><a role="menuitem" href="#sosmed">Sosmed</a></li>
+      </ul>
+
+      <button class="burger" id="burgerBtn" aria-label="Menu"><i class="fa fa-bars"></i></button>
+    </nav>
+
+    <!-- HERO -->
+    <header id="home" class="hero" role="banner">
+      <!-- background -->
+      <div class="hero-slides" aria-hidden="true">
+        <div class="slide" style="--i:1"></div>
+        <div class="slide" style="--i:2"></div>
+        <div class="slide" style="--i:3"></div>
+        <div class="slide" style="--i:4"></div>
+      </div>
+      
+      <div class="hero-logo" aria-hidden="true">
+        <img src="img/logo.jpg" alt="Logo Kelas (besar)" style="width:100%;height:100%;object-fit:contain" />
+      </div>
+      <h1>XII TKJ PUTRA</h1>
+      <p>"Together we grow — Together we shine."</p>
+    </header>
+
+    <!-- ABOUT -->
+    <section id="about" class="container reveal">
+      <h2>Tentang Kami</h2><span class="accent"></span>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <ul>
+            <li><strong>Visi:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li><strong>Misi:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+          </ul>
+          <div style="margin-top:12px">
+            <a class="btn-ghost btn-gallery" href="#gallery" aria-label="Lihat Galeri">Lihat Galeri</a>
+          </div>
+        </div>
+        <div class="about-media">
+          <img src="img/about.jpg" alt="About XII TKJ Putra" loading="lazy" width="900" height="600">
+        </div>
+      </div>
+    </section>
+
+    <!-- STUDENTS -->
+    <section id="students" class="container reveal">
+      <h2>Group Members</h2><span class="accent"></span>
+      <div class="students-grid" id="studentsGrid">
+        <article class="student">
+          <img class="photo" src="img/student/student1.jpg" alt="Ardi Dwi Andika" loading="lazy" width="600" height="450">
+          <div class="content">
+            <h3>Ardi</h3>
+            <p class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, voluptatibus pariatur eum earum fugit possimus dolorum!</p>
+            <div class="socials">
+              <a href="#" title="Instagram Ardi"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="student">
+          <img class="photo" src="img/student/student2.jpg" alt="M. Zaenal Fiqri" loading="lazy" width="600" height="450">
+          <div class="content">
+            <h3>Zaenal</h3>
+            <p class="quote">"Mereka bilang aku bebas. Tapi bagaimana bisa kau bebas, jika bahkan dirimu tak tahu ke mana kau pergi?"</p>
+            <div class="socials">
+              <a href="#" title="Instagram Zen"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="student">
+          <img class="photo" src="img/student/student3.jpg" alt="Hadjri" loading="lazy" width="600" height="450">
+          <div class="content">
+            <h3>Hadjri</h3>
+            <p class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, voluptatibus pariatur eum earum fugit possimus dolorum!</p>
+            <div class="socials">
+              <a href="#" title="Instagram Hadjri"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="student">
+          <img class="photo" src="img/student/student4.jpg" alt="Muzakir" loading="lazy" width="600" height="450">
+          <div class="content">
+            <h3>Muzakir</h3>
+            <p class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, voluptatibus pariatur eum earum fugit possimus dolorum!</p>
+            <div class="socials">
+              <a href="#" title="Instagram Muzakir"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="student">
+          <img class="photo" src="img/student/student5.jpg" alt="Ilyas" loading="lazy" width="600" height="450">
+          <div class="content">
+            <h3>Ilyas</h3>
+            <p class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, voluptatibus pariatur eum earum fugit possimus dolorum!</p>
+            <div class="socials">
+              <a href="#" title="Instagram Ilyas"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="student">
+          <img class="photo" src="img/student/student6.jpg" alt="Jehan" loading="lazy" width="600" height="450">
+          <div class="content">
+            <h3>Jehan</h3>
+            <p class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, voluptatibus pariatur eum earum fugit possimus dolorum!</p>
+            <div class="socials">
+              <a href="#" title="Instagram Jehan"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="student">
+          <img class="photo" src="img/student/student7.jpg" alt="Asep" loading="lazy" width="600" height="450">
+          <div class="content">
+            <h3>Asep</h3>
+            <p class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, voluptatibus pariatur eum earum fugit possimus dolorum!</p>
+            <div class="socials">
+              <a href="#" title="Instagram Asep"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="student">
+          <img class="photo" src="img/student/student8.jpg" alt="Arseno" loading="lazy" width="600" height="450">
+          <div class="content">
+            <h3>Arseno</h3>
+            <p class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, voluptatibus pariatur eum earum fugit possimus dolorum!</p>
+            <div class="socials">
+              <a href="#" title="Instagram Arseno"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="student">
+          <img class="photo" src="img/student/student9.jpg" alt="Taufik" loading="lazy" width="600" height="450">
+          <div class="content">
+            <h3>Taufik</h3>
+            <p class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, voluptatibus pariatur eum earum fugit possimus dolorum!</p>
+            <div class="socials">
+              <a href="#" title="Instagram Taufik"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="student">
+          <img class="photo" src="img/student/student10.jpg" alt="Rohendi" loading="lazy" width="600" height="450">
+          <div class="content">
+            <h3>Rohendi</h3>
+            <p class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, voluptatibus pariatur eum earum fugit possimus dolorum!</p>
+            <div class="socials">
+              <a href="#" title="Instagram Rohendi"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="student">
+          <img class="photo" src="img/student/student11.jpg" alt="Sigit" loading="lazy" width="600" height="450">
+          <div class="content">
+            <h3>Sigit</h3>
+            <p class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, voluptatibus pariatur eum earum fugit possimus dolorum!</p>
+            <div class="socials">
+              <a href="#" title="Instagram Sigit"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="student">
+          <img class="photo" src="img/student/student12.jpg" alt="Didin" loading="lazy" width="600" height="450">
+          <div class="content">
+            <h3>Didin</h3>
+            <p class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, voluptatibus pariatur eum earum fugit possimus dolorum!</p>
+            <div class="socials">
+              <a href="#" title="Instagram Didin"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="student">
+          <img class="photo" src="img/student/student13.jpg" alt="Gilang" loading="lazy" width="600" height="450">
+          <div class="content">
+            <h3>Gilang</h3>
+            <p class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, voluptatibus pariatur eum earum fugit possimus dolorum!</p>
+            <div class="socials">
+              <a href="#" title="Instagram Gilang"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="student">
+          <img class="photo" src="img/student/student14.jpg" alt="Akmal M. A." loading="lazy" width="600" height="450">
+          <div class="content">
+            <h3>Akmal M. A.</h3>
+            <p class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, voluptatibus pariatur eum earum fugit possimus dolorum!</p>
+            <div class="socials">
+              <a href="#" title="Instagram Akmal"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- QUOTES -->
+    <section id="quotes" class="reveal">
+      <div class="container quotes">
+        <h2 style="color:#fff">Class Quotes</h2><span class="accent" style="display:none"></span>
+        <div class="quote-box"><span>Great moments are born from great opportunities — and we, XII TKJ Putra, made the most of ours.</span></div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="container reveal">
+      <h2>Gallery</h2><span class="accent"></span>
+      <div class="gallery-grid" id="galleryGrid">
+  <img class="gallery-item" tabindex="0" src="img/gallery/gallery1.jpg" alt="Gallery 1" data-index="0" loading="lazy" width="900" height="600">
+  <img class="gallery-item" tabindex="0" src="img/gallery/gallery2.jpg" alt="Gallery 2" data-index="1" loading="lazy" width="900" height="600">
+  <img class="gallery-item" tabindex="0" src="img/gallery/gallery3.jpg" alt="Gallery 3" data-index="2" loading="lazy" width="900" height="600">
+  <img class="gallery-item" tabindex="0" src="img/gallery/gallery4.jpg" alt="Gallery 4" data-index="3" loading="lazy" width="900" height="600">
+  <img class="gallery-item" tabindex="0" src="img/gallery/gallery5.jpg" alt="Gallery 5" data-index="4" loading="lazy" width="900" height="600">
+  <img class="gallery-item" tabindex="0" src="img/gallery/gallery6.jpg" alt="Gallery 6" data-index="5" loading="lazy" width="900" height="600">
+  <img class="gallery-item" tabindex="0" src="img/gallery/gallery7.jpg" alt="Gallery 7" data-index="6" loading="lazy" width="900" height="600">
+  <img class="gallery-item" tabindex="0" src="img/gallery/gallery8.jpg" alt="Gallery 8" data-index="7" loading="lazy" width="900" height="600">
+        <!-- tambahin cuy, pastiin data-index nya berurutan 0 sampai sekian... -->
+      </div>
+    </section>
+
+    <!-- EVENTS -->
+    <section id="events" class="container reveal">
+      <h2>Class Events</h2><span class="accent"></span>
+      <p style="color:#4b5b6e;margin-top:6px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+      <div class="events-grid" id="eventsGrid">
+        <article class="event-card" tabindex="0" role="button"
+                 data-title="Kunjungan Industri"
+                 data-date="12 Mei 2024"
+                 data-location="PT. Lapan"
+                 data-img="img/event/event1.jpg"
+                 data-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, voluptatibus pariatur eum earum fugit possimus dolorum!">
+          <img src="img/event/event1.jpg" alt="Kunjungan Industri">
+          <div class="event-info">
+            <h3>Kunjungan Industri</h3>
+            <div class="date"><i class="fa fa-calendar"></i> 12 Mei 2024</div>
+            <div class="meta">PT. Lapan — Kunjungan Industri</div>
+            <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, voluptatibus pariatur eum earum fugit possimus dolorum!</p>
+          </div>
+        </article>
+
+        <article class="event-card" tabindex="0" role="button"
+                 data-title="MPLS"
+                 data-date="6-9 Juni 2024"
+                 data-location="SMK YP. 79 Majalaya"
+                 data-img="img/event/event2.jpg"
+                 data-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, voluptatibus pariatur eum earum fugit possimus dolorum!">
+          <img src="img/event/event2.jpg" alt="MPLS">
+          <div class="event-info">
+            <h3>Masa Pengenalan Lingkungan Sekolah</h3>
+            <div class="date"><i class="fa fa-calendar"></i> 6-9 Juni 2020</div>
+            <div class="meta"> SMK YP. 79 Majalaya — MPLS</div>
+            <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, voluptatibus pariatur eum earum fugit possimus dolorum!</p>
+          </div>
+        </article>
+
+        <article class="event-card" tabindex="0" role="button"
+                 data-title="Nama Event"
+                 data-date="25 Juli 2024"
+                 data-location="Nama Tempat"
+                 data-img="img/event/event3.jpg"
+                 data-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, voluptatibus pariatur eum earum fugit possimus dolorum!">
+          <img src="img/event/event3.jpg" alt="Nama Event">
+          <div class="event-info">
+            <h3>Nama Event</h3>
+            <div class="date"><i class="fa fa-calendar"></i> 25 Juli 2024</div>
+            <div class="meta">Tempat — Kategori</div>
+            <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, voluptatibus pariatur eum earum fugit possimus dolorum!</p>
+          </div>
+        </article>
+
+        <article class="event-card" tabindex="0" role="button"
+                 data-title="Nama Event"
+                 data-date="25 Juli 2024"
+                 data-location="Nama Tempat"
+                 data-img="img/event/event3.jpg"
+                 data-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, voluptatibus pariatur eum earum fugit possimus dolorum!">
+          <img src="img/event/event3.jpg" alt="Nama Event">
+          <div class="event-info">
+            <h3>Nama Event</h3>
+            <div class="date"><i class="fa fa-calendar"></i> 25 Juli 2024</div>
+            <div class="meta">Tempat — Kategori</div>
+            <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, voluptatibus pariatur eum earum fugit possimus dolorum!</p>
+          </div>
+        </article>
+
+        <article class="event-card" tabindex="0" role="button"
+                 data-title="Nama Event"
+                 data-date="25 Juli 2024"
+                 data-location="Nama Tempat"
+                 data-img="img/event/event3.jpg"
+                 data-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, voluptatibus pariatur eum earum fugit possimus dolorum!">
+          <img src="img/event/event3.jpg" alt="Nama Event">
+          <div class="event-info">
+            <h3>Nama Event</h3>
+            <div class="date"><i class="fa fa-calendar"></i> 25 Juli 2024</div>
+            <div class="meta">Tempat — Kategori</div>
+            <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, voluptatibus pariatur eum earum fugit possimus dolorum!</p>
+          </div>
+        </article>
+
+        <article class="event-card" tabindex="0" role="button"
+                 data-title="Nama Event"
+                 data-date="25 Juli 2024"
+                 data-location="Nama Tempat"
+                 data-img="img/event/event3.jpg"
+                 data-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, voluptatibus pariatur eum earum fugit possimus dolorum!">
+          <img src="img/event/event3.jpg" alt="Nama Event">
+          <div class="event-info">
+            <h3>Nama Event</h3>
+            <div class="date"><i class="fa fa-calendar"></i> 25 Juli 2024</div>
+            <div class="meta">Tempat — Kategori</div>
+            <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, voluptatibus pariatur eum earum fugit possimus dolorum!</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- SOSMED -->
+    <section id="sosmed" class="container reveal" style="text-align:center">
+      <h2>Follow Our Journey</h2><span class="accent"></span>
+      <div style="display:flex;gap:16px;justify-content:center;margin-top:12px;flex-wrap:wrap">
+        <a href="https://www.instagram.com/journey_of_adulthood_xiitkj?igsh=MWg4YWI2bXVleHBvYQ==" style="padding:8px 12px;border-radius:999px;border:1px solid #e6eef6;background:#fff;display:inline-flex;align-items:center;gap:8px"><i class="fab fa-instagram"></i> Instagram</a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer><small>© 2025 XII TKJ PUTRA</small></footer>
+
+    <!-- LIGHTBOX ALBUM -->
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+      <div class="frame" role="dialog" aria-modal="true">
+        <button class="close" id="lbClose" aria-label="Close (Esc)"><i class="fa fa-times"></i></button>
+        <button class="prev" id="lbPrev" aria-label="Previous"><i class="fa fa-chevron-left"></i></button>
+        <div style="max-width:100%;display:flex;align-items:center;justify-content:center">
+          <img src="" alt="" id="lbImage">
+        </div>
+        <button class="next" id="lbNext" aria-label="Next"><i class="fa fa-chevron-right"></i></button>
+        <div class="caption" id="lbCaption">1 / 4</div>
+      </div>
+    </div>
+
+    <!-- EVENT MODAL -->
+    <div class="event-modal" id="eventModal" aria-hidden="true">
+      <div class="event-frame" role="dialog" aria-modal="true">
+        <button class="close" id="eventClose" aria-label="Close Event"><i class="fa fa-times"></i></button>
+        <img src="" alt="" id="eventImg">
+        <div class="body">
+          <h3 id="eventTitle">Title</h3>
+          <div class="date" id="eventDate">Date</div>
+          <div class="meta" id="eventLocation">Location</div>
+          <p class="desc" id="eventDesc">Description</p>
+          <div class="event-actions">
+            <button class="btn-ghost" id="btnAddCalendar">Add to Calendar</button>
+            <a class="btn-ghost" id="btnOpenGallery" href="#gallery">Lihat Galeri</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- AUDIO (musik) -->
+    <audio id="bgAudio" loop preload="auto" src="media/music.mp3"></audio>
+
+    <!-- STUDENT MODAL -->
+    <div class="student-modal" id="studentModal" aria-hidden="true">
+      <div class="student-frame" role="dialog" aria-modal="true">
+        <button class="close" id="studentClose" aria-label="Close"><i class="fa fa-times"></i></button>
+        <img src="" alt="" id="studentImg">
+        <div class="body">
+          <h3 id="studentName">Nama</h3>
+          <p id="studentBio">Bio singkat atau quote siswa akan muncul di sini.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCROLL TO TOP -->
+    <button id="scrollTop" class="scroll-top" title="Kembali ke atas" aria-label="Scroll to top"><i class="fa fa-chevron-up"></i></button>
+
+    <!-- AUDIO FAB & PANEL -->
+    <div class="audio-fab" id="audioFab" title="Music control (tap)">
+      <i class="fa fa-music" id="audioFabIcon" style="color:#1d3c6a;font-size:18px"></i>
+    </div>
+
+    <div class="audio-panel" id="audioPanel" aria-hidden="true">
+      <div style="display:flex;align-items:center;justify-content:space-between">
+        <strong style="color:#1d3c6a">Music</strong>
+        <button id="audioClose" title="Close"><i class="fa fa-times"></i></button>
+      </div>
+      <div class="controls">
+        <button id="playBtn" title="Play / Pause"><i class="fa fa-play"></i></button>
+        <button id="muteBtn" title="Mute / Unmute"><i class="fa fa-volume-high"></i></button>
+        <input id="volRange" type="range" min="0" max="1" step="0.01" value="0.12" aria-label="Volume slider">
+      </div>
+    </div>
+
+  </main>
+
+  <!-- SCRIPT JAWA -->
+  <script src="js/main.js" defer></script>
+</body>
+</html>
