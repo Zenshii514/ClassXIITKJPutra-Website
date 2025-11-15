@@ -74,6 +74,19 @@
       // fallback: show all
       revealEls.forEach(el => el.classList.add('show'));
     }
+// Targeted fallback for some Android/older WebViews: if the students section
+    // still didn't get revealed after a short delay, force it visible so group
+    // members are not hidden. This avoids disabling reveal animations globally.
+    setTimeout(() => {
+      try {
+        const studentsSection = document.getElementById('students');
+        if (studentsSection && !studentsSection.classList.contains('show')) {
+          studentsSection.classList.add('show');
+        }
+      } catch (err) {
+        // ignore
+      }
+    }, 700);
   } catch (err) {
     // don't break if anything goes wrong here
     // console.warn(err);
