@@ -343,30 +343,7 @@
   const eventLocation = $('#eventLocation');
   const eventDesc = $('#eventDesc');
   const eventClose = $('#eventClose');
-  const btnAddCalendar = $('#btnAddCalendar');
 
-  function createICS(title, dateText, location, desc) {
-    // ICS generator sederhana: memasukkan dateText ke DESCRIPTION.
-    const now = new Date();
-    const uid = 'tkjputra-' + now.getTime() + '@local';
-    const dtstamp = now.toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z';
-    const summary = (title || '').replace(/,/g, '');
-    const description = (desc || '').replace(/\n/g, '\\n');
-
-    return [
-      'BEGIN:VCALENDAR',
-      'VERSION:2.0',
-      'PRODID:-//XII TKJ PUTRA//EN',
-      'BEGIN:VEVENT',
-      'UID:' + uid,
-      'DTSTAMP:' + dtstamp,
-      'SUMMARY:' + summary,
-      'DESCRIPTION:' + description + '\\nLokasi: ' + (location || '') + '\\nTanggal: ' + (dateText || ''),
-      'LOCATION:' + (location || ''),
-      'END:VEVENT',
-      'END:VCALENDAR'
-    ].join('\r\n');
-  }
 
   function openEventCard(card) {
     if (!card || !eventModal) return;
@@ -386,20 +363,7 @@
     eventModal.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';
 
-    if (btnAddCalendar) {
-      btnAddCalendar.onclick = () => {
-        const ics = createICS(title, date, location, desc);
-        const blob = new Blob([ics], { type: 'text/calendar;charset=utf-8' });
-        const url = URL.createObjectURL(blob);
-        const a = document.createElement('a');
-        a.href = url;
-        a.download = (title.replace(/[^a-z0-9]/gi, '_') || 'event') + '.ics';
-        document.body.appendChild(a);
-        a.click();
-        a.remove();
-        URL.revokeObjectURL(url);
-      };
-    }
+    // Add-to-calendar feature removed; keep modal open logic only.
   }
 
   function closeEventModal() {
